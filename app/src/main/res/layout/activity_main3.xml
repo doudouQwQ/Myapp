@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myapp.example.com.myapp.Main1Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/id_add_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="名称"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/id_add_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="价格"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/id_add_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="联系方式"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/id_img_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:listitem="@layout/item_layout" >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_fabu_add"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="发布"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+</RelativeLayout>
